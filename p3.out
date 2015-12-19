@@ -1,0 +1,146 @@
+blackbox version 43
+command line:  blackbox -o domain.pddl -f p3.pddl -solver chaff
+
+Begin solver specification
+    -maxint        0   -maxsec 0.000000  chaff
+End solver specification
+Loading domain file: domain.pddl
+Loading fact file: p3.pddl
+Problem name: 01
+Facts loaded.
+time: 1, 125 facts and 88 exclusive pairs.
+time: 2, 269 facts and 12122 exclusive pairs.
+Goals reachable at 2 steps but mutually exclusive.
+time: 3, 272 facts and 11053 exclusive pairs.
+Goals reachable at 3 steps but mutually exclusive.
+time: 4, 272 facts and 3174 exclusive pairs.
+Goals reachable at 4 steps but mutually exclusive.
+time: 5, 272 facts and 1724 exclusive pairs.
+Goals first reachable in 5 steps.
+3476 nodes created.
+
+####################################################
+goals at time 6:
+  color_a_red color_b_green color_c_blue arm-empty clean_brush1 
+
+
+
+----------------------------------------------------
+** Turning off completeness check **
+Converting graph to wff
+number of action variables = 1100
+number of fluent variables = 482
+total number variables = 1582
+number clauses = 133325
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+time: 6, 272 facts and 1580 exclusive pairs.
+852 new nodes added.
+
+####################################################
+goals at time 7:
+  color_a_red color_b_green color_c_blue arm-empty clean_brush1 
+
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 1523
+number of fluent variables = 651
+total number variables = 2174
+number clauses = 194298
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+Can't solve in 6 steps
+time: 7, 272 facts and 1580 exclusive pairs.
+852 new nodes added.
+
+####################################################
+goals at time 8:
+  color_a_red color_b_green color_c_blue arm-empty clean_brush1 
+
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 1946
+number of fluent variables = 820
+total number variables = 2766
+number clauses = 240375
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+Can't solve in 7 steps
+time: 8, 272 facts and 1580 exclusive pairs.
+852 new nodes added.
+
+####################################################
+goals at time 9:
+  color_a_red color_b_green color_c_blue arm-empty clean_brush1 
+
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 2369
+number of fluent variables = 989
+total number variables = 3358
+number clauses = 286184
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+Can't solve in 8 steps
+time: 9, 272 facts and 1580 exclusive pairs.
+852 new nodes added.
+
+####################################################
+goals at time 10:
+  color_a_red color_b_green color_c_blue arm-empty clean_brush1 
+
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 2792
+number of fluent variables = 1158
+total number variables = 3950
+number clauses = 331993
+Result is Sat
+Iteration was 0
+Performing plan justification:
+   0 actions were pruned in 0.00 seconds
+
+----------------------------------------------------
+Begin plan
+1 (pick-up spray1)
+2 (spray-block a spray1 red)
+3 (stack spray1 can3)
+4 (pick-up spray3)
+5 (spray-block c spray3 blue)
+6 (stack spray3 can2)
+7 (pick-up spray2)
+8 (spray-block b spray2 green)
+9 (stack spray2 can1)
+End plan
+----------------------------------------------------
+
+9 total actions in plan
+0 entries in hash table, 
+8 total set-creation steps (entries + hits + plan length - 1)
+0 actions tried
+
+####################################################
+Total elapsed time:   2.15 seconds
+Time in milliseconds: 2145
+
+####################################################

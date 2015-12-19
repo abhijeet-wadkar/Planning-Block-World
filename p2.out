@@ -1,0 +1,123 @@
+blackbox version 43
+command line:  blackbox -o domain.pddl -f p2.pddl -solver chaff
+
+Begin solver specification
+    -maxint        0   -maxsec 0.000000  chaff
+End solver specification
+Loading domain file: domain.pddl
+Loading fact file: p2.pddl
+Problem name: 01
+Facts loaded.
+time: 1, 60 facts and 32 exclusive pairs.
+time: 2, 86 facts and 555 exclusive pairs.
+time: 3, 90 facts and 572 exclusive pairs.
+time: 4, 101 facts and 730 exclusive pairs.
+time: 5, 103 facts and 572 exclusive pairs.
+Goals reachable at 5 steps but mutually exclusive.
+time: 6, 103 facts and 374 exclusive pairs.
+Goals reachable at 6 steps but mutually exclusive.
+time: 7, 103 facts and 316 exclusive pairs.
+Goals first reachable in 7 steps.
+1739 nodes created.
+
+####################################################
+goals at time 8:
+  color_a_red color_b_blue arm-empty clean_brush1 
+
+
+----------------------------------------------------
+** Turning off completeness check **
+Converting graph to wff
+number of action variables = 584
+number of fluent variables = 296
+total number variables = 880
+number clauses = 20412
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+time: 8, 103 facts and 290 exclusive pairs.
+290 new nodes added.
+
+####################################################
+goals at time 9:
+  color_a_red color_b_blue arm-empty clean_brush1 
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 721
+number of fluent variables = 357
+total number variables = 1078
+number clauses = 25860
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+Can't solve in 8 steps
+time: 9, 103 facts and 290 exclusive pairs.
+290 new nodes added.
+
+####################################################
+goals at time 10:
+  color_a_red color_b_blue arm-empty clean_brush1 
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 858
+number of fluent variables = 418
+total number variables = 1276
+number clauses = 31143
+Instance unsatisfiable
+Result is Unsat
+Iteration was 0
+
+----------------------------------------------------
+Can't solve in 9 steps
+time: 10, 103 facts and 290 exclusive pairs.
+290 new nodes added.
+
+####################################################
+goals at time 11:
+  color_a_red color_b_blue arm-empty clean_brush1 
+
+
+----------------------------------------------------
+Converting graph to wff
+number of action variables = 995
+number of fluent variables = 479
+total number variables = 1474
+number clauses = 36400
+Result is Sat
+Iteration was 0
+Performing plan justification:
+   0 actions were pruned in 0.00 seconds
+
+----------------------------------------------------
+Begin plan
+1 (un-stack b a)
+2 (put-down b)
+3 (pick-up spray1)
+4 (spray-block b spray1 blue)
+5 (put-down spray1)
+6 (pick-up brush1)
+7 (load-brush brush1 red can1)
+8 (paint-block brush1 a red)
+9 (clean-brush brush1 water1 red)
+10 (stack brush1 spray1)
+End plan
+----------------------------------------------------
+
+10 total actions in plan
+0 entries in hash table, 
+9 total set-creation steps (entries + hits + plan length - 1)
+0 actions tried
+
+####################################################
+Total elapsed time:   0.17 seconds
+Time in milliseconds: 166
+
+####################################################

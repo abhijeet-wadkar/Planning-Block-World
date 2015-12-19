@@ -1,0 +1,52 @@
+blackbox version 43
+command line:  blackbox -o domain.pddl -f p0.pddl -solver chaff
+
+Begin solver specification
+    -maxint        0   -maxsec 0.000000  chaff
+End solver specification
+Loading domain file: domain.pddl
+Loading fact file: p0.pddl
+Problem name: 01
+Facts loaded.
+time: 1, 24 facts and 7 exclusive pairs.
+time: 2, 27 facts and 22 exclusive pairs.
+Goals reachable at 2 steps but mutually exclusive.
+time: 3, 27 facts and 18 exclusive pairs.
+Goals first reachable in 3 steps.
+191 nodes created.
+
+####################################################
+goals at time 4:
+  color_a_red arm-empty 
+
+
+----------------------------------------------------
+** Turning off completeness check **
+Converting graph to wff
+number of action variables = 31
+number of fluent variables = 27
+total number variables = 58
+number clauses = 167
+Result is Sat
+Iteration was 0
+Performing plan justification:
+   0 actions were pruned in 0.00 seconds
+
+----------------------------------------------------
+Begin plan
+1 (pick-up spray1)
+2 (spray-block a spray1 red)
+3 (put-down spray1)
+End plan
+----------------------------------------------------
+
+3 total actions in plan
+0 entries in hash table, 
+2 total set-creation steps (entries + hits + plan length - 1)
+0 actions tried
+
+####################################################
+Total elapsed time:   0.01 seconds
+Time in milliseconds: 8
+
+####################################################

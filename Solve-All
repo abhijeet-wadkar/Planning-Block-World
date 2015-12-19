@@ -1,0 +1,8 @@
+echo "outputs are redirected to p[0-6].out files"
+blackbox -o domain.pddl -f p0.pddl -solver chaff > p0.out
+blackbox -o domain.pddl -f p1.pddl -solver chaff > p1.out
+blackbox -o domain.pddl -f p2.pddl -solver chaff > p2.out
+blackbox -o domain.pddl -f p3.pddl -solver chaff > p3.out
+blackbox -o domain.pddl -f p4.pddl -solver chaff > p4.out
+blackbox -o domain.pddl -f p5.pddl -solver chaff > p5.out
+blackbox -o domain.pddl -f p6.pddl -solver chaff > p6.out
